@@ -5,9 +5,9 @@ const path=require("path");
 const bodyParser=require("body-parser")
 const session=require("express-session")
 const cookieParser=require("cookie-parser")
-
-/*dotenv.config({path:'./.env'})
 const app = express();
+/*dotenv.config({path:'./.env'})
+
 const db= mysql.createConnection({
     connectionLimit:100,
     user:process.env.DATABASE_USER,
