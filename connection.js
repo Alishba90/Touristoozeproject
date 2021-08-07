@@ -6,7 +6,7 @@ const bodyParser=require("body-parser")
 const session=require("express-session")
 const cookieParser=require("cookie-parser")
 const app = express();
-/*dotenv.config({path:'./.env'})
+dotenv.config({path:'./.env'})
 
 const db= mysql.createConnection({
     connectionLimit:100,
@@ -15,7 +15,7 @@ const db= mysql.createConnection({
     password:process.env.DATABASE_PASSWORD,
     database:process.env.DATABASE,
     
-})*/
+})
 
 const publicDirectory=path.join(__dirname,"/public");
 app.use(express.static(publicDirectory));
@@ -44,14 +44,14 @@ app.use(session({
 
 app.set('view engine' ,'hbs');
 
-/*db.connect((error)=>{
+db.connect((error)=>{
     if(error) throw error;
     console.log("Database connected");
-})*/
+})
 
 //Define routes
 app.use('/',require('./routes/index'));
-//app.use('/auth',require('./routes/auth'))
+app.use('/auth',require('./routes/auth'))
 var port=process.env.PORT||8080
 app.listen(port,()=>{
 console.log("server working fine!");
