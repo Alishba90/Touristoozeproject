@@ -54,10 +54,10 @@ router.get("/Sindh" ,(req,res)=> {
                 else{
                     req.session.larkana=results
                     
-            db.query("SELECT Name,Type,image FROM sindh WHERE City='Mirpur Khas'",(err,results)=>{if (err) throw err
+            db.query("SELECT Name,Type,image FROM sindh WHERE City='Mirpur khas'",(err,results)=>{if (err) throw err
                 else{
                     req.session.mirpur=results
-            db.query("SELECT Name,Type,image FROM sindh WHERE City='Dharki'",(err,results)=>{if (err) throw err
+            db.query("SELECT Name,Type,image FROM sindh WHERE City='Daharki'",(err,results)=>{if (err) throw err
                 else{
                     req.session.dharki=results
                     
@@ -82,7 +82,7 @@ router.get("/Sindh" ,(req,res)=> {
             db.query("SELECT Name,Type,image FROM sindh WHERE City='Rohri'",(err,results)=>{if (err) throw err
                 else{
                     req.session.rohri=results
-            db.query("SELECT Name,Type,image FROM sindh WHERE City='Tando Allahyar'",(err,results)=>{if (err) throw err
+            db.query("SELECT Name,Type,image FROM sindh WHERE City='Tando Allah yar'",(err,results)=>{if (err) throw err
                 else{
                     req.session.mirpur=results
             db.query("SELECT Name,Type,image FROM sindh WHERE City='Umerkot'",(err,results)=>{if (err) throw err
@@ -209,7 +209,7 @@ router.get("/Punjab" ,(req,res)=> {
                     db.query("SELECT Name,Type,image FROM punjab WHERE City='Chiniot'",(err,results)=>{if (err) throw err
                 else{
                     req.session.chiniot=results
-                    db.query("SELECT Name,Type,image FROM punjab WHERE City='Bahawalpur'",(err,results)=>{if (err) throw err
+                    db.query("SELECT Name,Type,image FROM punjab WHERE City='Bhawalpur'",(err,results)=>{if (err) throw err
                 else{
                     req.session.bahawalpur=results
                     db.query("SELECT Name,Type,image FROM punjab WHERE City='Sialkot'",(err,results)=>{if (err) throw err
@@ -259,7 +259,7 @@ router.get("/KPK" ,(req,res)=> {
     db.query("SELECT Name,City,month FROM events WHERE Province='KPK'AND status=1",(err,r)=>{if (err) throw err
         else{
             let e=r
-    db.query("SELECT Name,Type,image FROM kpk WHERE City='Abbottabad'",(err,results)=>{if (err) throw err
+    db.query("SELECT Name,Type,image FROM kpk WHERE City='Abbotabad'",(err,results)=>{if (err) throw err
         else{
             req.session.abbotabad=results
         
@@ -314,7 +314,7 @@ router.get("/KPK" ,(req,res)=> {
                     db.query("SELECT Name,Type,image FROM kpk WHERE City='Malakand'",(err,results)=>{if (err) throw err
                 else{
                     req.session.malakand=results
-                    db.query("SELECT Name,Type,image FROM kpk WHERE City='Peshawer'",(err,results)=>{if (err) throw err
+                    db.query("SELECT Name,Type,image FROM kpk WHERE City='Peshawar'",(err,results)=>{if (err) throw err
                 else{
                     req.session.peshawer=results
                     db.query("SELECT Name,Type,image FROM kpk WHERE City='Mansehra'",(err,results)=>{if (err) throw err
@@ -392,7 +392,7 @@ router.get("/Balochistan" ,(req,res)=> {
             
              
 
-            db.query("SELECT Name,Type,image FROM balochistan WHERE City='Zohb'",(err,results)=>{if (err) throw err
+            db.query("SELECT Name,Type,image FROM balochistan WHERE City='Zhob'",(err,results)=>{if (err) throw err
                 else{
                     req.session.zhob=results
                     

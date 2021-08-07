@@ -28,7 +28,6 @@
   function loadfun() {
   myVar = setTimeout(showPage, 3000);
 }
-
 function showPage() {
   document.getElementById("loading").style.display = "none";
   document.getElementById("myDiv").style.display = "block";
@@ -130,7 +129,6 @@ function showPage() {
 <script>
 var slideIndex = 0;
 showSlides();
-
 function showSlides() {
   var i;
   var slides = document.getElementsByClassName("imgdiv");
@@ -983,7 +981,6 @@ function showSlides() {
 </div>
    
   <script src="/slider.js">
-
   </script>
   
 
@@ -991,9 +988,7 @@ function showSlides() {
   </div>
   
 </div>
-{{#if log}}
 <div class="cart"><i class="fas fa-shopping-cart"></i></div>
-{{/if}}
 
     <div class="filterportion" id="cartportion">
       <div class="filterbox">
@@ -1017,23 +1012,15 @@ function showSlides() {
 <footer>
 </footer>
 <script>     
-
    document.querySelector("#ccancelBtn").addEventListener("click", function(){
             document.querySelector("#cartportion").style.display="none";
             enableScrolling()
             })</script>
   <script>
-
 $(document).ready(function() {
 var checkboxes = $( '.activitychoice' );
-
     // Check all checkboxes
     checkboxes.prop( 'checked', true );
-
-
-
-
-
    
   $(".checkbox").click(function () {
     $( "#list" ).empty();
@@ -1055,7 +1042,6 @@ var checkboxes = $( '.activitychoice' );
                 $('.messagehead').css("display","none");
             }
             
-
         });
   $("#f").click(function(){
         var x = $("#cityfilter").val();
@@ -1067,8 +1053,6 @@ var checkboxes = $( '.activitychoice' );
         
     });
     $("#ccancelBtn").click(function(event) {$('#cartportion').css("display","none");} );
-
-
     $("#applyBtn").click(function(event) {
       $('#filterportion').css("display","none");
       $(".places").css("display","none")
@@ -1093,36 +1077,23 @@ var checkboxes = $( '.activitychoice' );
             }
      
       } );
-
-
-
-
     $(".cart").click(function(event) {$('#cartportion').css("display","block");} );
     $("#close5").click(function(event) {$('#cartportion').css("display","none");} );
   
     $(".o").click(function(event) {
        
        x=$(this).attr('id');
-
 if (x=="1"){$(".city").css("display","none");
        $('#lahore').css("display","block");
        }
        else  if(x=="2"){$('#islamabad').css("display","block");}
-
        else  if(x=="3"){$('#kamoke').css("display","block");}
-
        else  if(x=="4"){$('#sialkot').css("display","block");}
-
        else  if(x=="5"){$('#jhang').css("display","block");}
-
        else  if(x=="6"){$('#chiniot').css("display","block");}
-
        else  if(x=="7"){$('#faislabad').css("display","block");}
-
        else  if(x=="8"){$('#wah').css("display","block");}
-
        else  if(x=="9"){$('#kasur').css("display","block");}
-
     });
 });
   </script>
