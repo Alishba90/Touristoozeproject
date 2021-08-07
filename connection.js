@@ -51,7 +51,7 @@ app.set('view engine' ,'hbs');
 
 //Define routes
 app.use('/',require('./routes/index'));
-app.use('/auth',require('./routes/auth'))
+//app.use('/auth',require('./routes/auth'))
 var port=process.env.PORT||8080
 app.listen(port,()=>{
 console.log("server working fine!");
