@@ -656,7 +656,7 @@ router.get("/SignIn" ,(req,res)=> {
     req.session.package=null
 
     if(req.session.val=="1"){
-        req.session.destroy(function(err){if(err){}}
+        req.session.destroy(function(err){if(err){console.log("oho")}}
         );
         
     res.render("SignIn"); }
