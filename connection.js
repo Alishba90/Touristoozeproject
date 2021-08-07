@@ -52,8 +52,8 @@ db.connect((error)=>{
 //Define routes
 app.use('/',require('./routes/index'));
 app.use('/auth',require('./routes/auth'))
-
-app.listen(3000,()=>{
+var port=process.env.PORT||8080
+app.listen(port,()=>{
 console.log("server working fine!");
 });
 
