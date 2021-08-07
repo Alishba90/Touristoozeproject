@@ -506,7 +506,7 @@ router.get("/Balochistan" ,(req,res)=> {
 });
 
 router.get("/" ,(req,res)=> {
-    res.render("SignIn")
+    res.redirect("../SignIn")
 });
 router.get("/Tripdetail" ,(req,res)=> {
     for(var x in req.session.cartok){
